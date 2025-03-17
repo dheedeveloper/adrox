@@ -1,3 +1,4 @@
+import 'package:adrox/screens/verifyscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,6 +14,11 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
 
   final walletAddress = TextEditingController();
+
+  void verifyScreen(){
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>
+    const VerifyScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -96,6 +102,13 @@ class _SignInScreenState extends State<SignInScreen> {
                     cursorColor: Colors.transparent,
                     controller: walletAddress,
                     decoration: InputDecoration(
+                      suffixIcon: Text("Paste",style: TextStyle(
+                        color: Colors.blueAccent, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                      ),),
+                        hintText: "       Enter Mnemonic key",
+                        hintStyle: TextStyle(
+                          color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                        ),
                         contentPadding: EdgeInsets.symmetric(vertical: 28.h),
                       enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
                           color: Colors.grey
@@ -128,7 +141,9 @@ class _SignInScreenState extends State<SignInScreen> {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          verifyScreen();
+                        },
                         style: ElevatedButton.styleFrom(
                           fixedSize: Size(150.w, 40.h),
                           backgroundColor: const Color(0xff3F5FF2),
