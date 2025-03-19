@@ -1,3 +1,4 @@
+import 'package:adrox/screens/createaccount.dart';
 import 'package:adrox/screens/signinscreen.dart';
 import 'package:adrox/utils/text.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,12 @@ class LandingScreen extends StatefulWidget {
 class _LandingScreenState extends State<LandingScreen> {
 
   void signIn(){
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>
+    Navigator.push(context, MaterialPageRoute(builder: (context) =>
     const SignInScreen()));
+  }
+
+  void createWallet(){
+    Navigator.push(context, MaterialPageRoute(builder: (context) => CreateAccount(),));
   }
 
   @override
@@ -58,7 +63,9 @@ class _LandingScreenState extends State<LandingScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        createWallet();
+                      },
                       style: ElevatedButton.styleFrom(
                         fixedSize: Size(150.w, 40.h),
                         backgroundColor: const Color(0xff12172C),

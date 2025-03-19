@@ -16,7 +16,7 @@ class _SignInScreenState extends State<SignInScreen> {
   final walletAddress = TextEditingController();
 
   void verifyScreen(){
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>
+    Navigator.push(context, MaterialPageRoute(builder: (context) =>
     const VerifyScreen()));
   }
 
@@ -103,7 +103,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     controller: walletAddress,
                     decoration: InputDecoration(
                       suffixIcon: Text("Paste",style: TextStyle(
-                        color: Colors.blueAccent, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                        color: Colors.blueAccent, fontFamily: "Roboto-normal", fontSize: 14.sp,
                       ),),
                         hintText: "       Enter Mnemonic key",
                         hintStyle: TextStyle(
@@ -126,7 +126,9 @@ class _SignInScreenState extends State<SignInScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         style: ElevatedButton.styleFrom(
                           fixedSize: Size(100.w, 40.h),
                           backgroundColor: const Color(0xffF4F4F6),
