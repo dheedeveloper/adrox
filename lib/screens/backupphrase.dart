@@ -2,6 +2,7 @@ import 'package:adrox/screens/confirmbackup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../utils/images.dart';
 import '../utils/text.dart';
 
 class BackupPhrase extends StatefulWidget {
@@ -25,7 +26,8 @@ class _BackupPhraseState extends State<BackupPhrase> {
           height: double.infinity.h,
           width: double.infinity.w,
           padding: EdgeInsets.only(bottom: 20.h),
-          decoration: const BoxDecoration(color: Colors.blue),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(
+          AstImg.loginBg),fit: BoxFit.cover)),
           child: Align(
             alignment: Alignment.bottomCenter, // Adjust as needed
             child: Container(

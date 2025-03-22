@@ -4,6 +4,8 @@ import 'package:adrox/utils/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../utils/images.dart';
+
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});
 
@@ -29,7 +31,8 @@ class _LandingScreenState extends State<LandingScreen> {
         height: double.infinity.h,
         width: double.infinity.w,
         padding: EdgeInsets.only(bottom: 20.h),
-        decoration: const BoxDecoration(color: Colors.blue),
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage(
+          AstImg.loginBg),fit: BoxFit.cover)),
         child: Align(
           alignment: Alignment.bottomCenter, // Adjust as needed
           child: Container(

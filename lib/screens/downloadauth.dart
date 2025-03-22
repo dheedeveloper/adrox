@@ -1,3 +1,4 @@
+import 'package:adrox/screens/setupscreen.dart';
 import 'package:adrox/screens/verifyscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,7 +16,7 @@ class DownloadAuth extends StatefulWidget {
 class _DownloadAuthState extends State<DownloadAuth> {
 
   void verifyScreen(){
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const VerifyScreen(),));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const SetupScreen(),));
   }
 
   @override
@@ -42,7 +43,7 @@ class _DownloadAuthState extends State<DownloadAuth> {
                 children: [
                   Text("Download  Authenticator Application",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,
                   ),textAlign: TextAlign.center,),
-                  Image.asset(AssetImages.verify),
+                  Image.asset(AstImg.verify),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -52,7 +53,7 @@ class _DownloadAuthState extends State<DownloadAuth> {
                     ),child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                      Image.asset(AssetImages.playStore),
+                      Image.asset(AstImg.playStore),
                       RichText(
                         text: TextSpan(
                           children: [
@@ -84,7 +85,7 @@ class _DownloadAuthState extends State<DownloadAuth> {
                     ),child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                      Image.asset(AssetImages.appStore),
+                      Image.asset(AstImg.appStore),
                       RichText(
                         text: TextSpan(
                           children: [

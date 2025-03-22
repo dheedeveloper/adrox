@@ -1,4 +1,5 @@
 import 'package:adrox/screens/landingscreen.dart';
+import 'package:adrox/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: LandingScreen(),
+        home: SplashScreen(),
       ),
     );
   }
