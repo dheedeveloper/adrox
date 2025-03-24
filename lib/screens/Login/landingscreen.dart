@@ -1,10 +1,11 @@
-import 'package:adrox/screens/createaccount.dart';
-import 'package:adrox/screens/signinscreen.dart';
+import 'package:adrox/screens/Landing/LendingMenu/lendingscreen.dart';
+import 'package:adrox/screens/Login/signinscreen.dart';
 import 'package:adrox/utils/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../utils/images.dart';
+import '../../utils/images.dart';
+import 'createaccount.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});
@@ -21,7 +22,7 @@ class _LandingScreenState extends State<LandingScreen> {
   }
 
   void createWallet(){
-    Navigator.push(context, MaterialPageRoute(builder: (context) => CreateAccount(),));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const LendingScreen(),));
   }
 
   @override

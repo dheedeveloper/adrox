@@ -1,9 +1,9 @@
-import 'package:adrox/screens/verifyscreen.dart';
+import 'package:adrox/screens/Login/verifyscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../utils/images.dart';
-import '../utils/text.dart';
+import '../../utils/images.dart';
+import '../../utils/text.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});

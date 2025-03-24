@@ -1,9 +1,8 @@
-import 'package:adrox/screens/downloadauth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../utils/images.dart';
-import '../utils/text.dart';
+import '../../utils/images.dart';
+import '../../utils/text.dart';
+import 'downloadauth.dart';
 
 class ConfirmBackup extends StatefulWidget {
   const ConfirmBackup({super.key});

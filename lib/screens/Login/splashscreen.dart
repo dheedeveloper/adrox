@@ -1,9 +1,9 @@
 import 'dart:async';
-
-import 'package:adrox/screens/landingscreen.dart';
 import 'package:adrox/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'landingscreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -6,4 +6,25 @@ class AstImg {
   static String splashBg = "assets/images/splash_bg.jpg";
   static String loginBg = "assets/images/loging_bg.png";
   static String qr = "assets/images/QR.png";
+  static String purse = "assets/images/purse.png";
+  static String usut = "assets/images/usdt.png";
+  static String profitSelect = "assets/images/profit_select.png";
+  static String profitDis = "assets/images/profit_dis.png";
+  static String lendingSelect = "assets/images/lending_select.png";
+  static String lendingDis = "assets/images/lending_dis.png";
+  static String homeSelect = "assets/images/home_select.png";
+  static String homeDis = "assets/images/home_disslect.png";
+  static String lendingCont = "assets/images/lending.png";
+  static String collab = "assets/images/collab.png";
+  static String pool = "assets/images/pool.png";
+  static String rank = "assets/images/rank.png";
+  static String referral = "assets/images/referral.png";
+  static String team = "assets/images/team.png";
+  static String falling = "assets/images/falling.png";
+  static String logo = "assets/images/logo.png";
+  static String setting = "assets/images/setting.png";
+  static String notification = "assets/images/notification.png";
+  static String scanner = "assets/images/scanner.png";
+  static String announcement = "assets/images/announcement.png";
+  static String whitePaper = "assets/images/whitepaper.png";
 }

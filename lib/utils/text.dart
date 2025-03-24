@@ -7,4 +7,6 @@ class StringValues{
   static String walletCont ="Create an Wallet to unlock more features and a seamless experience.";
   static String backupCont ="Secure your digital assets with our robust 12-phrase backup system, and optimize  seamless user experience";
   static String verify2fa ="Please  enter two factor token from Google Authenticator to verify correct setup!";
+  static String lending ="The lending pool will be returned to your wallet upon maturity, until then you will receive lending  profits daily";
+  static String home ="Please download our new app to\nget more Features and Safety";
 }

@@ -1,5 +1,4 @@
-import 'package:adrox/screens/landingscreen.dart';
-import 'package:adrox/screens/splashscreen.dart';
+import 'package:adrox/screens/Login/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
