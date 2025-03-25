@@ -1,9 +1,9 @@
-import 'package:adrox/screens/Login/disablescreen.dart';
 import 'package:adrox/utils/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../utils/images.dart';
+import '../../../utils/images.dart';
+import 'disablescreen.dart';
 
 class VerifyScreen extends StatefulWidget {
   const VerifyScreen({super.key});

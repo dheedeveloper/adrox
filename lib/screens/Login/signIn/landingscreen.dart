@@ -1,11 +1,9 @@
-import 'package:adrox/screens/Landing/LendingMenu/lendingscreen.dart';
-import 'package:adrox/screens/Login/signinscreen.dart';
+import 'package:adrox/screens/Login/signIn/signinscreen.dart';
 import 'package:adrox/utils/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../utils/images.dart';
-import 'createaccount.dart';
+import '../../../utils/images.dart';
+import '../creatAccount/createaccount.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});

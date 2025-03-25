@@ -1,4 +1,4 @@
-import 'package:adrox/screens/Login/verifyscreen.dart';
+import 'package:adrox/screens/Login/creatAccount/verifyscreen.dart';
 import 'package:adrox/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

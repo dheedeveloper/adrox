@@ -1,10 +1,10 @@
-import 'package:adrox/screens/Landing/profitMenu/profitlendhistory.dart';
+import 'package:adrox/screens/Landing/profitMenu/profitLending/profitlendhistory.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../utils/images.dart';
-import '../LendingMenu/lendinghistory.dart';
-import '../LendingMenu/lendingscreen.dart';
+import '../../../../utils/images.dart';
+import '../../LendingMenu/lendinghistory.dart';
+import '../../LendingMenu/lendingscreen.dart';
 
 class LendingBonus extends StatefulWidget {
   const LendingBonus({super.key});

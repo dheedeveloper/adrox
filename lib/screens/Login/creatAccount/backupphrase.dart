@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../utils/images.dart';
-import '../../utils/text.dart';
-import 'downloadauth.dart';
+import '../../../utils/images.dart';
+import '../../../utils/text.dart';
+import 'confirmbackup.dart';
 
-class ConfirmBackup extends StatefulWidget {
-  const ConfirmBackup({super.key});
+class BackupPhrase extends StatefulWidget {
+  const BackupPhrase({super.key});
 
   @override
-  State<ConfirmBackup> createState() => _ConfirmBackupState();
+  State<BackupPhrase> createState() => _BackupPhraseState();
 }
 
-class _ConfirmBackupState extends State<ConfirmBackup> {
+class _BackupPhraseState extends State<BackupPhrase> {
 
-  final enterPhrase = TextEditingController();
-  void authenticator(){
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const DownloadAuth()));
+  void confirmBackup(){
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const ConfirmBackup()));
   }
 
   @override
@@ -44,7 +43,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Confirm Backup",
+                    "Backup Phrase",
                     style: TextStyle(
                       fontFamily: "Roboto-bold",
                       fontSize: 25.sp,
@@ -68,57 +67,29 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                         fontWeight: FontWeight.w500
                     ),
                   ),
-                  SizedBox(height: 185.h,
-                    child: TextField(
-                      cursorColor: Colors.transparent,
-                      controller: enterPhrase,
-                      decoration: InputDecoration(
-                        hintText: "Enter Phrase",
-                        hintStyle: TextStyle(
-                          color: Colors.black45,
-                          fontFamily: "Roboto-lite",
-                          fontSize: 14.sp,
-                        ),
-                        prefixIcon: Padding(
-                          padding: EdgeInsets.only(left: 20.w, top: 15.h), // Adjust hint position
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Enter Phrase",
-                              style: TextStyle(
-                                color: Colors.black45,
-                                fontFamily: "Roboto-lite",
-                                fontSize: 14.sp,
-                              ),
-                            ),
-                          ),
-                        ),
-                        suffixIcon: Padding(
-                          padding: EdgeInsets.only(top: 15.h, right: 20.w), // Align to top-right
-                          child: Align(
-                            alignment: Alignment.topRight,
-                            child: Text(
-                              "Paste",
-                              style: TextStyle(
-                                color: Colors.blueAccent,
-                                fontFamily: "Roboto-normal",
-                                fontSize: 14.sp,
-                              ),
-                            ),
-                          ),
-                        ),
-                        contentPadding: EdgeInsets.only(top: 20.h, left: 10.w), // Adjust content padding
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
+                  SizedBox(
+                    height: 200.h, // Fixed height
+                    child: GridView.builder(
+                      physics: NeverScrollableScrollPhysics(), // Prevent scrolling
+                      itemCount: 10, // 6 rows x 2 columns
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2, // 2 columns
+                        mainAxisSpacing: 5.h, // Adjust spacing between rows
+                        crossAxisSpacing: 5.w, // Adjust spacing between columns
+                        childAspectRatio: 120.w / 30.h, // Adjust aspect ratio for better fit
+                      ),
+                      itemBuilder: (context, index) => Container(
+                        decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.r),
+                          border: Border.all(color: Colors.black45),
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20.r),
+                        child: Center(
+                          child: Text("${index+1}. letter",style: TextStyle(
+                              color: Colors.black54,
+                              fontFamily: "Roboto-lite",
+                              fontSize: 12.sp,
+                              fontWeight: FontWeight.w400
+                          ),),
                         ),
                       ),
                     ),
@@ -127,32 +98,34 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ElevatedButton(
-                        onPressed: () {
-                          Navigator.pop(context);
+                        onPressed: (){
+
                         },
                         style: ElevatedButton.styleFrom(
                           fixedSize: Size(100.w, 40.h),
-                          backgroundColor: const Color(0xffF4F4F6),
+                          shape: RoundedRectangleBorder(side: BorderSide(color: Color(0xff3F5FF2)),borderRadius:
+                          BorderRadius.circular(20.r)),
+                          backgroundColor: Colors.white,
                         ),
                         child: Text(
-                          "Back",
+                          "Copy",
                           style: TextStyle(
                             fontFamily: "Roboto-normal",
                             fontSize: 16.sp,
-                            color: Colors.black,
+                            color: Color(0xff3F5FF2),
                           ),
                         ),
                       ),
                       ElevatedButton(
                         onPressed: () {
-                               authenticator();
+                              confirmBackup();
                         },
                         style: ElevatedButton.styleFrom(
                           fixedSize: Size(150.w, 40.h),
                           backgroundColor: const Color(0xff3F5FF2),
                         ),
                         child: Text(
-                          "Done",
+                          "Next Step",
                           style: TextStyle(
                             fontFamily: "Roboto-normal",
                             fontSize: 16.sp,

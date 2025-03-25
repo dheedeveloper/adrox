@@ -1,13 +1,13 @@
-import 'package:adrox/screens/Landing/LendingMenu/lendinghistory.dart';
-import 'package:adrox/screens/Landing/collabscreens/collabtab.dart';
-import 'package:adrox/screens/Landing/profitMenu/lendingbonus.dart';
-import 'package:adrox/screens/Landing/profitMenu/profitpool.dart';
-import 'package:adrox/screens/Landing/profitMenu/profitreferral.dart';
-import 'package:adrox/screens/Landing/profitMenu/profitteam.dart';
-import 'package:adrox/screens/Landing/profitMenu/rankreward.dart';
+import 'package:adrox/screens/Landing/profitMenu/profitLending/lendingbonus.dart';
+import 'package:adrox/screens/Landing/profitMenu/profitPool/profitpool.dart';
+import 'package:adrox/screens/Landing/profitMenu/referralscreens/profitreferral.dart';
+import 'package:adrox/screens/Landing/profitMenu/profiTeam/profitteam.dart';
+import 'package:adrox/screens/Landing/profitMenu/profitRank/rankreward.dart';
 import 'package:adrox/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'collabscreens/collabtab.dart';
 
 class ProfitHomeTab extends StatefulWidget {
   const ProfitHomeTab({super.key});

@@ -1,8 +1,8 @@
-import 'package:adrox/screens/Login/setupscreen.dart';
+import 'package:adrox/screens/Login/creatAccount/setupscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../utils/images.dart';
+import '../../../utils/images.dart';
 
 
 class DownloadAuth extends StatefulWidget {

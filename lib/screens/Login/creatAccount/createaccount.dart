@@ -1,9 +1,9 @@
-import 'package:adrox/screens/Login/backupphrase.dart';
+import 'package:adrox/screens/Login/creatAccount/backupphrase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../utils/images.dart';
-import '../../utils/text.dart';
+import '../../../utils/images.dart';
+import '../../../utils/text.dart';
 
 class CreateAccount extends StatefulWidget {
   const CreateAccount({super.key});

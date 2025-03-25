@@ -1,4 +1,4 @@
-import 'package:adrox/screens/Landing/profitMenu/inactiveteam.dart';
+import 'package:adrox/screens/Landing/profitMenu/profiTeam/inactiveteam.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
