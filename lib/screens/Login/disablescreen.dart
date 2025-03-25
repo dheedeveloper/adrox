@@ -1,3 +1,4 @@
+import 'package:adrox/screens/Landing/LendingMenu/lendingscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -82,7 +83,9 @@ class _DisableScreenState extends State<DisableScreen> {
                 ),
                 Spacer(),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const LendingScreen(),));
+                  },
                   style: ElevatedButton.styleFrom(
                     fixedSize: Size(300.w, 40.h),
                     backgroundColor: const Color(0xffE46364),

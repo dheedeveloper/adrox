@@ -34,10 +34,9 @@ class _CollabScreenState extends State<CollabScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Total Rank Reward",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                      Text("Total Collab Incentives",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
                       Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
                     ],),
-                  SizedBox(width: 25.w,),
                   VerticalDivider(indent: 15.h,endIndent: 15.h,),
                   SizedBox(width: 20.w,),
                   Column(

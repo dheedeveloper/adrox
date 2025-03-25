@@ -22,7 +22,7 @@ class _LandingScreenState extends State<LandingScreen> {
   }
 
   void createWallet(){
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const LendingScreen(),));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateAccount(),));
   }
 
   @override
