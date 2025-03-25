@@ -53,7 +53,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       Text(
                         StringValues.loginTitle,
                         style: TextStyle(
-                          fontFamily: "Roboto-bold",
+                          fontFamily: "Roboto-medium",
                           fontSize: 25.sp,
                         ),
                       ),
@@ -61,7 +61,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         StringValues.loginCont,
                         style: TextStyle(
                           color: Colors.black54,
-                          fontFamily: "Roboto-lite",
+                          fontFamily: "Roboto-regular",
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w400
                         ),
@@ -70,21 +70,21 @@ class _SignInScreenState extends State<SignInScreen> {
                         "Wallet Address",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w500
                         ),
                       ),
                       TextField(
                         textAlign: TextAlign.start,
-                        style: TextStyle(color: Colors.black45, fontFamily: "Roboto-Normal", fontSize: 14.sp,decoration: TextDecoration.none,
+                        style: TextStyle(color: Colors.black45, fontFamily: "Roboto-medium", fontSize: 14.sp,decoration: TextDecoration.none,
                         decorationThickness: 0),
                         cursorColor: Colors.transparent,
                         controller: walletAddress,
                         decoration: InputDecoration(
                           hintText: "Enter Wallet Address",
                             hintStyle: TextStyle(
-                          color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                          color: Colors.black38, fontFamily: "Roboto-regular", fontSize: 14.sp,
                         ),
                             contentPadding: EdgeInsets.symmetric(vertical: 20.h,horizontal: 20.w),
                           enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
@@ -103,24 +103,24 @@ class _SignInScreenState extends State<SignInScreen> {
                         "Mnemonic Key",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 14.sp,
                         ),
                       ),
                       TextField(
                         textAlign: TextAlign.start,
-                        style: TextStyle(color: Colors.black45, fontFamily: "Roboto-Normal", fontSize: 14.sp,decoration: TextDecoration.none,
+                        style: TextStyle(color: Colors.black45, fontFamily: "Roboto-medium", fontSize: 14.sp,decoration: TextDecoration.none,
                             decorationThickness: 0),
                         cursorColor: Colors.transparent,
                         controller: mnemonicKey,
                         decoration: InputDecoration(
                             hintText: "Enter Mnemonic key",
                             hintStyle: TextStyle(
-                              color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                              color: Colors.black38, fontFamily: "Roboto-regular", fontSize: 14.sp,
                             ),
                             suffixIcon: TextButton(onPressed: () {},child: Text("Paste",style:TextStyle(
                               color: Colors.blueAccent,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 14.sp,
                             ))),
                             contentPadding: EdgeInsets.symmetric(vertical: 25.h,horizontal: 20.w),
@@ -150,7 +150,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             child: Text(
                               "Back",
                               style: TextStyle(
-                                fontFamily: "Roboto-normal",
+                                fontFamily: "Roboto-regular",
                                 fontSize: 16.sp,
                                 color: Colors.black,
                               ),
@@ -167,7 +167,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             child: Text(
                               "Sign In",
                               style: TextStyle(
-                                fontFamily: "Roboto-normal",
+                                fontFamily: "Roboto-regular",
                                 fontSize: 16.sp,
                                 color: Colors.white,
                               ),

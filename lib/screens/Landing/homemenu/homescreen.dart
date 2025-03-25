@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(children: [
               Image.asset(AstImg.announcement,height: 80.h,width: 80.h,),
               SizedBox(width:10.w),
-              Text(StringValues.home,style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 12.sp,))
+              Text(StringValues.home,style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 12.sp,))
             ],),),
               SizedBox(height: 10.h,),
             Container(
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
               20.r,),image: DecorationImage(image: AssetImage("assets/images/dummy.png"),fit: BoxFit.fitHeight)),
             ),
               SizedBox(height: 10.h,),
-            Text("Details",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+            Text("Details",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 16.sp,)),
               SizedBox(
                 height: 230.h,
                 child: GridView.builder(
@@ -71,12 +71,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       AssetImage(AstImg.whitePaper),fit: BoxFit.cover),border: Border.all(color: Colors.black12,),
                           borderRadius: BorderRadius.circular(15.r)),),
                       SizedBox(height: 10.h,),
-                      Text(titles[index],style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 11.sp,)),
+                      Text(titles[index],style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 11.sp,)),
                     ],);
                   },
                 ),
               ),
-              Text("Coins",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+              Text("Coins",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 16.sp,)),
               SizedBox(height: 10.h,),
               SizedBox(
                   height:350.h ,
@@ -93,13 +93,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(width: 20.w,),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                      Text("USDT",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
-                      Text("2938",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                      Text("USDT",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 16.sp,)),
+                      Text("2938",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                     ],),
                     Spacer(),
                     Container(height: 25.h,width: 60.w,decoration: BoxDecoration(color: Color(0xff3ECD8B),borderRadius: BorderRadius.circular(8.r)),
-                      child: Center(child: Text("+ 0.02%",style: TextStyle(color: Colors.white, fontFamily: "Roboto-normal", fontSize: 13.sp,)),),)
+                      child: Center(child: Text("+ 0.02%",style: TextStyle(color: Colors.white, fontFamily: "Roboto-regular", fontSize: 13.sp,)),),)
                   ],)))
 
             ],),

@@ -45,7 +45,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                   Text(
                     "Backup Phrase",
                     style: TextStyle(
-                      fontFamily: "Roboto-bold",
+                      fontFamily: "Roboto-medium",
                       fontSize: 25.sp,
                     ),
                   ),
@@ -53,7 +53,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                     StringValues.backupCont,
                     style: TextStyle(
                         color: Colors.black54,
-                        fontFamily: "Roboto-lite",
+                        fontFamily: "Roboto-regular",
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400
                     ),
@@ -62,7 +62,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                     "Phrase",
                     style: TextStyle(
                         color: Colors.black,
-                        fontFamily: "Roboto-normal",
+                        fontFamily: "Roboto-regular",
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w500
                     ),
@@ -86,7 +86,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                         child: Center(
                           child: Text("${index+1}. letter",style: TextStyle(
                               color: Colors.black54,
-                              fontFamily: "Roboto-lite",
+                              fontFamily: "Roboto-regular",
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w400
                           ),),
@@ -110,7 +110,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                         child: Text(
                           "Copy",
                           style: TextStyle(
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 16.sp,
                             color: Color(0xff3F5FF2),
                           ),
@@ -127,7 +127,7 @@ class _BackupPhraseState extends State<BackupPhrase> {
                         child: Text(
                           "Next Step",
                           style: TextStyle(
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 16.sp,
                             color: Colors.white,
                           ),

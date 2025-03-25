@@ -31,8 +31,8 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Total lending pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Total lending pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                   SizedBox(width: 30.w,),
                   VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -41,15 +41,15 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Lending pools",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Lending pools",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                 ],
               ),),
             SizedBox(height: 20.h,),
             Row(
               children: [
-                Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+                Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
                 Spacer(),
                 SizedBox(height: 30.h,
                   child: DecoratedBox(
@@ -63,17 +63,17 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                         child: DropdownButton<String>(
                           borderRadius: BorderRadius.all(Radius.circular(15.r)),
                           value: selectedValue,
-                          style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,),
+                          style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,),
                           items: [
                             DropdownMenuItem(
                               value: "Last Month",
                               child: Text("Last Month",
-                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                             ),
                             DropdownMenuItem(
                               value: "Last Year",
                               child: Text("Last Year",
-                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                             ),
                           ],
                           onChanged: (newValue) {
@@ -88,7 +88,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                 )
               ],
             ),            SizedBox(height: 15.h,),
-            Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+            Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
             Expanded(
               child: ListView.builder(
                 itemCount: 6,
@@ -105,9 +105,9 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                            Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                             Spacer(),
-                            Text("1000 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                            Text("1000 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                           ],),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -125,7 +125,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                           style: TextStyle(
                                             color: Colors.black,
                                             fontWeight: FontWeight.bold,
-                                            fontFamily: "Roboto-normal",
+                                            fontFamily: "Roboto-medium",
                                             fontSize: 15.sp, // Smaller font size
                                           ),
                                         ),
@@ -133,7 +133,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                           text: "Days", // Bottom text with larger font size
                                           style: TextStyle(
                                             color: Colors.black54,
-                                            fontFamily: "Roboto-normal",
+                                            fontFamily: "Roboto-medium",
                                             fontSize: 15.sp, // Larger font size
                                           ),
                                         ),
@@ -149,7 +149,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                           style: TextStyle(
                                             color: Colors.black,
                                             fontWeight: FontWeight.bold,
-                                            fontFamily: "Roboto-normal",
+                                            fontFamily: "Roboto-medium",
                                             fontSize: 15.sp, // Smaller font size
                                           ),
                                         ),
@@ -157,7 +157,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                           text: "Bonus", // Bottom text with larger font size
                                           style: TextStyle(
                                             color: Colors.black54,
-                                            fontFamily: "Roboto-normal",
+                                            fontFamily: "Roboto-medium",
                                             fontSize: 15.sp, // Larger font size
                                           ),
                                         ),
@@ -171,7 +171,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                             Container(
                               height: 35.h,width: 80.w,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.r),
                                 border: Border.all(color: Color(0xff3ECD8B))),
-                              child:Center(child: Text("Active",style: TextStyle(color: Color(0xff3ECD8B), fontFamily: "Roboto-normal", fontSize: 15.sp,))),
+                              child:Center(child: Text("Active",style: TextStyle(color: Color(0xff3ECD8B), fontFamily: "Roboto-medium", fontSize: 15.sp,))),
                             ),
                           ],),
                         Row(
@@ -184,7 +184,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                     style: TextStyle(
                                       color: Colors.black54,
                                       fontWeight: FontWeight.normal,
-                                      fontFamily: "Roboto-normal",
+                                      fontFamily: "Roboto-medium",
                                       fontSize: 13.sp, // Smaller font size
                                     ),
                                   ),
@@ -192,7 +192,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                     text: "0X98DFY887SD8...FHJF", // Bottom text with larger font size
                                     style: TextStyle(
                                       color: Color(0xff3F5FF2),
-                                      fontFamily: "Roboto-normal",
+                                      fontFamily: "Roboto-medium",
                                       fontSize: 13.sp, // Larger font size
                                     ),
                                   ),
@@ -210,7 +210,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                 style: TextStyle(
                                   color: Colors.black54,
                                   fontWeight: FontWeight.normal,
-                                  fontFamily: "Roboto-normal",
+                                  fontFamily: "Roboto-medium",
                                   fontSize: 13.sp, // Smaller font size
                                 ),
                               ),
@@ -218,7 +218,7 @@ class _ProfitLendHistoryState extends State<ProfitLendHistory> {
                                 text: "11.30Am | 20 Apr 2025", // Bottom text with larger font size
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontFamily: "Roboto-normal",
+                                  fontFamily: "Roboto-medium",
                                   fontSize: 13.sp, // Larger font size
                                 ),
                               ),

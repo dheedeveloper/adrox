@@ -46,7 +46,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                   Text(
                     "Confirm Backup",
                     style: TextStyle(
-                      fontFamily: "Roboto-bold",
+                      fontFamily: "Roboto-medium",
                       fontSize: 25.sp,
                     ),
                   ),
@@ -54,7 +54,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                     StringValues.backupCont,
                     style: TextStyle(
                         color: Colors.black54,
-                        fontFamily: "Roboto-lite",
+                        fontFamily: "Roboto-regular",
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400
                     ),
@@ -63,7 +63,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                     "Phrase",
                     style: TextStyle(
                         color: Colors.black,
-                        fontFamily: "Roboto-normal",
+                        fontFamily: "Roboto-regular",
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w500
                     ),
@@ -76,38 +76,15 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                         hintText: "Enter Phrase",
                         hintStyle: TextStyle(
                           color: Colors.black45,
-                          fontFamily: "Roboto-lite",
+                          fontFamily: "Roboto-regular",
                           fontSize: 14.sp,
                         ),
-                        prefixIcon: Padding(
-                          padding: EdgeInsets.only(left: 20.w, top: 15.h), // Adjust hint position
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Enter Phrase",
-                              style: TextStyle(
-                                color: Colors.black45,
-                                fontFamily: "Roboto-lite",
-                                fontSize: 14.sp,
-                              ),
-                            ),
-                          ),
-                        ),
-                        suffixIcon: Padding(
-                          padding: EdgeInsets.only(top: 15.h, right: 20.w), // Align to top-right
-                          child: Align(
-                            alignment: Alignment.topRight,
-                            child: Text(
-                              "Paste",
-                              style: TextStyle(
-                                color: Colors.blueAccent,
-                                fontFamily: "Roboto-normal",
-                                fontSize: 14.sp,
-                              ),
-                            ),
-                          ),
-                        ),
-                        contentPadding: EdgeInsets.only(top: 20.h, left: 10.w), // Adjust content padding
+                        suffixIcon: TextButton(onPressed: () {},child: Text("Paste",style:TextStyle(
+                          color: Colors.blueAccent,
+                          fontFamily: "Roboto-regular",
+                          fontSize: 14.sp,
+                        ))),
+                        contentPadding: EdgeInsets.symmetric(vertical: 90.h, horizontal: 10.w), // Adjust content padding
                         enabledBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: Colors.grey),
                           borderRadius: BorderRadius.circular(20.r),
@@ -137,7 +114,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                         child: Text(
                           "Back",
                           style: TextStyle(
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 16.sp,
                             color: Colors.black,
                           ),
@@ -154,7 +131,7 @@ class _ConfirmBackupState extends State<ConfirmBackup> {
                         child: Text(
                           "Done",
                           style: TextStyle(
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 16.sp,
                             color: Colors.white,
                           ),

@@ -49,8 +49,8 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Text("Total Profit",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
-          Text("200 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 30.sp,)),
+          Text("Total Profit",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
+          Text("200 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 30.sp,)),
             Expanded(
               child: GridView.builder(
                 padding: EdgeInsets.all(10.w),
@@ -83,7 +83,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                                 conTitle[index],
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontFamily: "Roboto-lite",
+                                  fontFamily: "Roboto-regular",
                                   fontSize: 16.sp,
                                 ),
                               ),
@@ -96,7 +96,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                             "Bonus",
                             style: TextStyle(
                               color: Colors.black,
-                              fontFamily: "Roboto-lite",
+                              fontFamily: "Roboto-regular",
                               fontSize: 15.sp,
                             ),
                           ),
@@ -107,7 +107,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                             "1200 ADX",
                             style: TextStyle(
                               color: Colors.black,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-medium",
                               fontSize: 18.sp,
                             ),
                           ),
@@ -118,7 +118,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                             "Lending",
                             style: TextStyle(
                               color: Colors.black,
-                              fontFamily: "Roboto-lite",
+                              fontFamily: "Roboto-regular",
                               fontSize: 15.sp,
                             ),
                           ),
@@ -129,7 +129,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                             "1200 ADX",
                             style: TextStyle(
                               color: Colors.black,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-medium",
                               fontSize: 18.sp,
                             ),
                           ),
@@ -145,7 +145,7 @@ class _ProfitHomeTabState extends State<ProfitHomeTab> {
                                   "View details",
                                   style: TextStyle(
                                     color: viewColor[index],
-                                    fontFamily: "Roboto-normal",
+                                    fontFamily: "Roboto-medium",
                                     fontSize: 14.sp,
                                   ),
                                 ),

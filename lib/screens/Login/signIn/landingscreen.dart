@@ -36,7 +36,7 @@ class _LandingScreenState extends State<LandingScreen> {
           alignment: Alignment.bottomCenter, // Adjust as needed
           child: Container(
             margin: EdgeInsets.only(top: 200.h), // Equivalent to top: 200.h in Positioned
-            padding: EdgeInsets.all(20.h),
+            padding: EdgeInsets.symmetric(vertical:20.h,horizontal: 25.w),
             height: 320.h,
             width: 320.w,
             decoration: BoxDecoration(
@@ -49,7 +49,7 @@ class _LandingScreenState extends State<LandingScreen> {
                 Text(
                   StringValues.landingTitle,
                   style: TextStyle(
-                    fontFamily: "Roboto-bold",
+                    fontFamily: "Roboto-medium",
                     fontSize: 31.sp,
                   ),
                 ),
@@ -57,7 +57,7 @@ class _LandingScreenState extends State<LandingScreen> {
                   StringValues.landingCont,
                   style: TextStyle(
                     color: Colors.black54,
-                    fontFamily: "Roboto-normal",
+                    fontFamily: "Roboto-regular",
                     fontSize: 12.sp,
                   ),
                 ),
@@ -75,7 +75,7 @@ class _LandingScreenState extends State<LandingScreen> {
                       child: Text(
                         "Create Wallet",
                         style: TextStyle(
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 16.sp,
                           color: Colors.white,
                         ),
@@ -92,7 +92,7 @@ class _LandingScreenState extends State<LandingScreen> {
                       child: Text(
                         "Sign In",
                         style: TextStyle(
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 16.sp,
                           color: Colors.white,
                         ),

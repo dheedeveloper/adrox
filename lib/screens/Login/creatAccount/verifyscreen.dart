@@ -24,29 +24,29 @@ class _VerifyScreenState extends State<VerifyScreen> {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: true,
-        appBar: AppBar(
-          leading: Padding(
-            padding:  EdgeInsets.only(left: 10.w),
-            child: Container(
-              height: 30,width: 30,decoration: BoxDecoration(borderRadius: BorderRadius.circular(15.r),color: Colors.white),
-              child: IconButton(onPressed: () => Navigator.pop(context),icon:Icon(Icons.arrow_back)),
-            ),
-          ),
-          centerTitle: true,
-          title: Text("Verify 2FA",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 18.sp,
-          ),),
-        ),
         body: SingleChildScrollView(
           child: SizedBox(
-            height: 610.h,
+            height: 660.h,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+                  child: Row(children: [
+                    Container(
+                      height: 50.h,width: 50.h,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.r),color: Colors.white),
+                      child: IconButton(onPressed: () => Navigator.pop(context),icon:Icon(Icons.keyboard_backspace_rounded)),
+                    ),
+                    SizedBox(width: 70.w,),
+                    Text("Verify 2FA",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 18.sp,
+                    ),),
+                  ],),
+                ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal:30.h,vertical:60.h),
                 child: Image.asset(AstImg.verify),
               ),
-                SizedBox(height: 25.h,),
+                SizedBox(height: 5.h,),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: Container(
@@ -56,10 +56,10 @@ class _VerifyScreenState extends State<VerifyScreen> {
                 ),child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                  Text("2FA Verifcation",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,
+                  Text("2FA Verifcation",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,
                   ),),
-                  Text(StringValues.verify2fa,style: TextStyle(color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 12.sp,
-                  ),),
+                  Text(StringValues.verify2fa,style: TextStyle(color: Colors.black45, fontFamily: "Roboto-regular", fontSize: 12.sp,
+                  ),textAlign: TextAlign.center,),
                     TextField(
                       cursorColor: Colors.transparent,
                       controller: verifyController,
@@ -67,7 +67,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                         suffixIcon: Image.asset(AstImg.copyImg),
                           hintText: "Enter 2fa code",
                           hintStyle: TextStyle(
-                            color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                            color: Colors.black38, fontFamily: "Roboto-regular", fontSize: 14.sp,
                           ),
                           contentPadding: EdgeInsets.symmetric(vertical: 15.h,horizontal: 20.w),
                           enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
@@ -96,7 +96,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                   child: Text(
                     "Next Step",
                     style: TextStyle(
-                      fontFamily: "Roboto-normal",
+                      fontFamily: "Roboto-regular",
                       fontSize: 16.sp,
                       color: Colors.white,
                     ),

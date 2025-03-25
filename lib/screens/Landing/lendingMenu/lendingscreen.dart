@@ -51,8 +51,8 @@ class _LendingScreenState extends State<LendingScreen>
               width: 180.w,
               child: TabBar(
                 controller: _tabController,
-                labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp),
-                unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 14.sp),
+                labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp),
+                unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 14.sp),
                 indicatorColor: Color(0xff3F5FF2), // Blue underline
                 labelColor: Colors.black, // Selected text color
                 unselectedLabelColor: Colors.black, // Unselected text color
@@ -79,8 +79,8 @@ class _LendingScreenState extends State<LendingScreen>
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: _selectedIndex,
             onTap: _onItemTapped,
-            unselectedLabelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 12.sp),
-            selectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 12.sp),
+            unselectedLabelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 12.sp),
+            selectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 12.sp),
             selectedItemColor: Colors.blue, // Active tab color
             unselectedItemColor: Colors.black54,
             items: [
@@ -122,11 +122,11 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Text("Lending",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+          Text("Lending",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-            Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+            Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
             SizedBox(width: 15.w,),
             Container(
               height: 35.h,width: 170.w,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.r),
@@ -141,7 +141,7 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 15.sp, // Smaller font size
                           ),
                         ),
@@ -149,7 +149,7 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                           text: "Days", // Bottom text with larger font size
                           style: TextStyle(
                             color: Colors.black54,
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-medium",
                             fontSize: 15.sp, // Larger font size
                           ),
                         ),
@@ -165,7 +165,7 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-regular",
                             fontSize: 15.sp, // Smaller font size
                           ),
                         ),
@@ -173,7 +173,7 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                           text: "Bonus", // Bottom text with larger font size
                           style: TextStyle(
                             color: Colors.black54,
-                            fontFamily: "Roboto-normal",
+                            fontFamily: "Roboto-medium",
                             fontSize: 15.sp, // Larger font size
                           ),
                         ),
@@ -198,11 +198,11 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("Pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 14.sp,)),
+                    Text("Pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
                     Spacer(),
                     Image.asset(AstImg.purse),
                     SizedBox(width: 10.w,),
-                    Text("250.02 USDT",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 14.sp,)),
+                    Text("250.02 USDT",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
                   ],),
               ),
               Padding(
@@ -210,9 +210,9 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                    Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                     Spacer(),
-                    Text("USDT",style: TextStyle(color: Color(0xff009393), fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                    Text("USDT",style: TextStyle(color: Color(0xff009393), fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                     SizedBox(width: 10.w,),
                     Image.asset(AstImg.usut)
                   ],),
@@ -223,12 +223,12 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("BNB Required   ",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                    Text("0.01 BNB",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                    Text("BNB Required   ",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
+                    Text("0.01 BNB",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                     Spacer(),
                     Image.asset(AstImg.purse),
                     SizedBox(width: 10.w,),
-                    Text("0.03 BNB",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                    Text("0.03 BNB",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                   ],),
               ),
             ],),),
@@ -244,14 +244,14 @@ class _LendingTabScreenState extends State<LendingTabScreen> {
           child: Text(
             "Start Lending",
             style: TextStyle(
-              fontFamily: "Roboto-normal",
+              fontFamily: "Roboto-regular",
               fontSize: 16.sp,
               color: Colors.white,
             ),
           ),
         ),
         SizedBox(height: 20.h,),
-        Text(StringValues.lending,style: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 12.sp,height: 1.4.h)),
+        Text(StringValues.lending,style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 12.sp,height: 1.4.h)),
       ],),
     );
   }

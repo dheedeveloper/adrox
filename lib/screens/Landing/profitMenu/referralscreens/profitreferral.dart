@@ -41,8 +41,8 @@ class _ProfitReferralState extends State<ProfitReferral> with SingleTickerProvid
                     child: TabBar(
                       tabAlignment: TabAlignment.start,
                       controller: _tabController,
-                      labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp),
-                      unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 14.sp),
+                      labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp),
+                      unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 14.sp),
                       indicatorColor: Color(0xff3F5FF2), // Blue underline
                       labelColor: Colors.black, // Selected text color
                       unselectedLabelColor: Colors.black, // Unselected text color

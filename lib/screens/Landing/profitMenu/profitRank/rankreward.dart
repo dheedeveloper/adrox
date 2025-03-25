@@ -18,7 +18,7 @@ class _RankRewardState extends State<RankReward> {
       appBar: AppBar(leading: IconButton(icon: Icon(Icons.keyboard_backspace_rounded), onPressed: () {
         Navigator.pop(context);
       },),
-      title: Text("Rank Reward",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 16.sp,)),),
+      title: Text("Rank Reward",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 16.sp,)),),
       body: Container(
         height: double.infinity,width: double.infinity.w,padding: EdgeInsets.all(20.h),
         child: Column(
@@ -35,8 +35,8 @@ class _RankRewardState extends State<RankReward> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Total Rank Reward",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Total Rank Reward",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                   SizedBox(width: 25.w,),
                   VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -45,8 +45,8 @@ class _RankRewardState extends State<RankReward> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Current Pool Match",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Current Pool Match",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                 ],
               ),),
@@ -61,8 +61,8 @@ class _RankRewardState extends State<RankReward> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Current Month Rank",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Current Month Rank",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                   SizedBox(width: 20.w,),
                   VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -71,15 +71,15 @@ class _RankRewardState extends State<RankReward> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Team lending pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                      Text("Team lending pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                     ],),
                 ],
               ),),
             SizedBox(height: 20.h,),
             Row(
               children: [
-                Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+                Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
                 Spacer(),
                 SizedBox(height: 30.h,
                   child: DecoratedBox(
@@ -93,17 +93,17 @@ class _RankRewardState extends State<RankReward> {
                         child: DropdownButton<String>(
                           borderRadius: BorderRadius.all(Radius.circular(15.r)),
                           value: selectedValue,
-                          style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,),
+                          style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,),
                           items: [
                             DropdownMenuItem(
                               value: "Last Month",
                               child: Text("Last Month",
-                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                             ),
                             DropdownMenuItem(
                               value: "Last Year",
                               child: Text("Last Year",
-                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                  style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                             ),
                           ],
                           onChanged: (newValue) {
@@ -118,7 +118,7 @@ class _RankRewardState extends State<RankReward> {
                 )
               ],
             ),            SizedBox(height: 15.h,),
-            Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+            Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
             Expanded(
               child: ListView.builder(
                 itemCount: 6,
@@ -144,16 +144,16 @@ class _RankRewardState extends State<RankReward> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp,)),
-                                Text("Executive",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 10.sp,)),
+                                Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
+                                Text("Executive",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 10.sp,)),
                               ],),
                             Spacer(),
-                            Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                            Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                           ],),
                         SizedBox(height: 7.h,),
                         Divider(),
                         SizedBox(height: 7.h,),
-                        Text("1000 Pool Matching",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 16.sp,)),
+                        Text("1000 Pool Matching",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 16.sp,)),
                         RichText(
                           text: TextSpan(
                             children: [
@@ -162,7 +162,7 @@ class _RankRewardState extends State<RankReward> {
                                 style: TextStyle(
                                   color: Colors.black54,
                                   fontWeight: FontWeight.normal,
-                                  fontFamily: "Roboto-normal",
+                                  fontFamily: "Roboto-medium",
                                   fontSize: 13.sp, // Smaller font size
                                 ),
                               ),
@@ -170,7 +170,7 @@ class _RankRewardState extends State<RankReward> {
                                 text: "11.30Am | 20 Apr 2025", // Bottom text with larger font size
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontFamily: "Roboto-normal",
+                                  fontFamily: "Roboto-medium",
                                   fontSize: 13.sp, // Larger font size
                                 ),
                               ),

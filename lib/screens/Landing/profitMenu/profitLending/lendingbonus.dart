@@ -50,8 +50,8 @@ class _LendingBonusState extends State<LendingBonus>with SingleTickerProviderSta
                 Expanded(
                   child: TabBar(
                     controller: _tabController,
-                    labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp),
-                    unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 14.sp),
+                    labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp),
+                    unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 14.sp),
                     indicatorColor: Color(0xff3F5FF2), // Blue underline
                     labelColor: Colors.black, // Selected text color
                     unselectedLabelColor: Colors.black, // Unselected text color
@@ -112,8 +112,8 @@ class _LendingBonusTabState extends State<LendingBonusTab> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Today Bonus",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                  Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                  Text("Today Bonus",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                  Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                 ],),
               SizedBox(width: 50.w,),
               VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -122,15 +122,15 @@ class _LendingBonusTabState extends State<LendingBonusTab> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Today Bonus",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                  Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                  Text("Today Bonus",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                  Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                 ],),
             ],
           ),),
         SizedBox(height: 20.h,),
           Row(
             children: [
-              Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+              Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
               Spacer(),
               SizedBox(height: 30.h,
                 child: DecoratedBox(
@@ -144,17 +144,17 @@ class _LendingBonusTabState extends State<LendingBonusTab> {
                       child: DropdownButton<String>(
                         borderRadius: BorderRadius.all(Radius.circular(15.r)),
                         value: selectedValue,
-                        style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,),
+                        style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,),
                         items: [
                           DropdownMenuItem(
                             value: "Last Month",
                             child: Text("Last Month",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                           ),
                           DropdownMenuItem(
                             value: "Last Year",
                             child: Text("Last Year",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                           ),
                         ],
                         onChanged: (newValue) {
@@ -169,7 +169,7 @@ class _LendingBonusTabState extends State<LendingBonusTab> {
               )
             ],
           ),          SizedBox(height: 15.h,),
-          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
           Expanded(
             child: ListView.builder(
               itemExtent: 60.h,
@@ -186,11 +186,11 @@ class _LendingBonusTabState extends State<LendingBonusTab> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-    Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp,)),
-    Text("Lending Bonus from 5000ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 10.sp,)),
+    Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
+    Text("Lending Bonus from 5000ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 10.sp,)),
     ],),
                 Spacer(),
-                Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
     ],),
             ),
           )

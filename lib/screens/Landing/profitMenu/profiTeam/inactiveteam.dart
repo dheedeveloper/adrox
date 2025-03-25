@@ -29,8 +29,8 @@ class _InActiveTeamState extends State<InActiveTeam> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Total Lending",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                    Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                    Text("Total Lending",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                    Text("1300 ",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                   ],),
                 SizedBox(width: 25.w,),
                 VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -39,15 +39,15 @@ class _InActiveTeamState extends State<InActiveTeam> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Total Inactive Count",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
-                    Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-normal", fontSize: 18.sp,)),
+                    Text("Total Inactive Count",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                    Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
                   ],),
               ],
             ),),
           SizedBox(height: 20.h,),
           Row(
             children: [
-              Text("Members Joined Details",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 15.sp,)),
+              Text("Members Joined Details",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
               Spacer(),
               SizedBox(height: 30.h,
                 child: DecoratedBox(
@@ -61,17 +61,17 @@ class _InActiveTeamState extends State<InActiveTeam> {
                       child: DropdownButton<String>(
                         borderRadius: BorderRadius.all(Radius.circular(15.r)),
                         value: selectedValue,
-                        style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,),
+                        style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,),
                         items: [
                           DropdownMenuItem(
                             value: "Last Month",
                             child: Text("Last Month",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                           ),
                           DropdownMenuItem(
                             value: "Last Year",
                             child: Text("Last Year",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
                           ),
                         ],
                         onChanged: (newValue) {
@@ -86,7 +86,7 @@ class _InActiveTeamState extends State<InActiveTeam> {
               )
             ],
           ),          SizedBox(height: 15.h,),
-          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
           Expanded(
             child: ListView.builder(
               itemCount: 6,
@@ -107,16 +107,16 @@ class _InActiveTeamState extends State<InActiveTeam> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 14.sp,)),
-                              Text("Executive",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 10.sp,)),
+                              Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
+                              Text("Executive",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 10.sp,)),
                             ],),
                           Spacer(),
                           Container(
                             height: 30.h,width: 100.h,decoration: BoxDecoration(color: Color(0xff212743),
                               borderRadius: BorderRadius.circular(10.r)),
-                            child: Center(child: Text("KI3847987 ",style: TextStyle(color: Colors.white, fontFamily: "Roboto-normal", fontSize: 12.sp,))),),
+                            child: Center(child: Text("KI3847987 ",style: TextStyle(color: Colors.white, fontFamily: "Roboto-medium", fontSize: 12.sp,))),),
                           SizedBox(width: 16.w,),
-                          Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                          Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                         ],),
                     ],),),
               ),

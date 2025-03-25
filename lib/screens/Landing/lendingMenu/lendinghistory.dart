@@ -20,7 +20,7 @@ class _LendingHistoryState extends State<LendingHistory> {
     return Container(
       height: double.infinity,width: double.infinity.w,padding: EdgeInsets.all(20.h),
       child: Column(children: [
-        Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+        Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
         SizedBox(height: 12.h,),
         Container(
           height: 250.h,width: double.infinity,decoration: BoxDecoration(color: Colors.grey.shade100,
@@ -34,9 +34,9 @@ class _LendingHistoryState extends State<LendingHistory> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                    Text("CORE",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                     Spacer(),
-                    Text("1000 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 20.sp,)),
+                    Text("1000 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 20.sp,)),
                   ],),
               ),
               Padding(
@@ -57,7 +57,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: "Roboto-normal",
+                                    fontFamily: "Roboto-regular",
                                     fontSize: 15.sp, // Smaller font size
                                   ),
                                 ),
@@ -65,7 +65,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                                   text: "Days", // Bottom text with larger font size
                                   style: TextStyle(
                                     color: Colors.black54,
-                                    fontFamily: "Roboto-normal",
+                                    fontFamily: "Roboto-medium",
                                     fontSize: 15.sp, // Larger font size
                                   ),
                                 ),
@@ -81,7 +81,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: "Roboto-normal",
+                                    fontFamily: "Roboto-regular",
                                     fontSize: 15.sp, // Smaller font size
                                   ),
                                 ),
@@ -89,7 +89,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                                   text: "Bonus", // Bottom text with larger font size
                                   style: TextStyle(
                                     color: Colors.black54,
-                                    fontFamily: "Roboto-normal",
+                                    fontFamily: "Roboto-medium",
                                     fontSize: 15.sp, // Larger font size
                                   ),
                                 ),
@@ -103,7 +103,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                     Container(
                       height: 35.h,width: 80.w,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.r),
                         border: Border.all(color: Color(0xff3ECD8B))),
-                      child:Center(child: Text("Active",style: TextStyle(color: Color(0xff3ECD8B), fontFamily: "Roboto-normal", fontSize: 15.sp,))),
+                      child:Center(child: Text("Active",style: TextStyle(color: Color(0xff3ECD8B), fontFamily: "Roboto-medium", fontSize: 15.sp,))),
                     ),
                   ],),
               ),
@@ -119,7 +119,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                             style: TextStyle(
                               color: Colors.black54,
                               fontWeight: FontWeight.normal,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 13.sp, // Smaller font size
                             ),
                           ),
@@ -127,7 +127,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                             text: "0X98DFY887SD8...FHJF", // Bottom text with larger font size
                             style: TextStyle(
                               color: Color(0xff3F5FF2),
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 13.sp, // Larger font size
                             ),
                           ),
@@ -148,7 +148,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                         style: TextStyle(
                           color: Colors.black54,
                           fontWeight: FontWeight.normal,
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 13.sp, // Smaller font size
                         ),
                       ),
@@ -156,7 +156,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                         text: "11.30Am | 20 Apr 2025", // Bottom text with larger font size
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-medium",
                           fontSize: 13.sp, // Larger font size
                         ),
                       ),
@@ -199,7 +199,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                         },
                       ),
                     ),
-                    Text("ReInvestment",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-normal", fontSize: 12.sp,)),
+                    Text("ReInvestment",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
                     Spacer(),
                     RichText(
                       text: TextSpan(
@@ -209,7 +209,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                             style: TextStyle(
                               color: Colors.black54,
                               fontWeight: FontWeight.normal,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 13.sp, // Smaller font size
                             ),
                           ),
@@ -217,7 +217,7 @@ class _LendingHistoryState extends State<LendingHistory> {
                             text: "11.30 Am", // Bottom text with larger font size
                             style: TextStyle(
                               color: Colors.black,
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-medium",
                               fontSize: 13.sp, // Larger font size
                             ),
                           ),

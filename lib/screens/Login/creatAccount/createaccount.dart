@@ -51,7 +51,7 @@ class _CreateAccountState extends State<CreateAccount> {
                     Text(
                       "Create Wallet",
                       style: TextStyle(
-                        fontFamily: "Roboto-bold",
+                        fontFamily: "Roboto-medium",
                         fontSize: 25.sp,
                       ),
                     ),
@@ -59,7 +59,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       StringValues.walletCont,
                       style: TextStyle(
                           color: Colors.black54,
-                          fontFamily: "Roboto-lite",
+                          fontFamily: "Roboto-regular",
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w400
                       ),
@@ -68,7 +68,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       "Name",
                       style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "Roboto-normal",
+                          fontFamily: "Roboto-regular",
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w500
                       ),
@@ -79,7 +79,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       decoration: InputDecoration(
                           hintText: "Enter your Name",
                           hintStyle: TextStyle(
-                            color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                            color: Colors.black45, fontFamily: "Roboto-regular", fontSize: 14.sp,
                           ),
                           contentPadding: EdgeInsets.symmetric(vertical: 13.h,horizontal: 20.w),
                           enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
@@ -98,7 +98,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       "Email Id",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: "Roboto-normal",
+                        fontFamily: "Roboto-regular",
                         fontSize: 14.sp,
                       ),
                     ),
@@ -108,7 +108,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       decoration: InputDecoration(
                           hintText: "Enter your Email Id",
                           hintStyle: TextStyle(
-                            color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                            color: Colors.black45, fontFamily: "Roboto-regular", fontSize: 14.sp,
                           ),
                           contentPadding: EdgeInsets.symmetric(vertical: 13.h,horizontal: 20.w),
                           enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
@@ -127,7 +127,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       "Referral Id",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: "Roboto-normal",
+                        fontFamily: "Roboto-regular",
                         fontSize: 14.sp,
                       ),
                     ),
@@ -137,7 +137,7 @@ class _CreateAccountState extends State<CreateAccount> {
                       decoration: InputDecoration(
                           hintText: "Enter Referral Id",
                           hintStyle: TextStyle(
-                            color: Colors.black45, fontFamily: "Roboto-lite", fontSize: 14.sp,
+                            color: Colors.black45, fontFamily: "Roboto-regular", fontSize: 14.sp,
                           ),
                           contentPadding: EdgeInsets.symmetric(vertical: 13.h,horizontal: 20.w),
                           enabledBorder: OutlineInputBorder(borderSide: const BorderSide(
@@ -166,7 +166,7 @@ class _CreateAccountState extends State<CreateAccount> {
                           child: Text(
                             "Back",
                             style: TextStyle(
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 16.sp,
                               color: Colors.black,
                             ),
@@ -183,7 +183,7 @@ class _CreateAccountState extends State<CreateAccount> {
                           child: Text(
                             "Next Step",
                             style: TextStyle(
-                              fontFamily: "Roboto-normal",
+                              fontFamily: "Roboto-regular",
                               fontSize: 16.sp,
                               color: Colors.white,
                             ),

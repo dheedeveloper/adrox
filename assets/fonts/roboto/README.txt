@@ -38,7 +38,7 @@ in those cases you can use the static font files for Roboto:
   static/Roboto-Regular.ttf
   static/Roboto-Medium.ttf
   static/Roboto-SemiBold.ttf
-  static/Roboto-Bold.ttf
+  static/Roboto-medium.ttf
   static/Roboto-ExtraBold.ttf
   static/Roboto-Black.ttf
   static/Roboto_Condensed-ThinItalic.ttf
@@ -65,7 +65,7 @@ in those cases you can use the static font files for Roboto:
   static/Roboto-Italic.ttf
   static/Roboto-MediumItalic.ttf
   static/Roboto-SemiBoldItalic.ttf
-  static/Roboto-BoldItalic.ttf
+  static/Roboto-mediumItalic.ttf
   static/Roboto-ExtraBoldItalic.ttf
   static/Roboto-BlackItalic.ttf
 

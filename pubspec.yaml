@@ -76,15 +76,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Roboto-normal
+     - family: Roboto-medium
        fonts:
          - asset: assets/fonts/roboto/static/Roboto-Medium.ttf
            style: normal
-     - family: Roboto-bold
+     - family: Roboto-regular
        fonts:
-         - asset: assets/fonts/roboto/static/Roboto-SemiBold.ttf
+         - asset: assets/fonts/roboto/static/Roboto-Regular.ttf
            style: normal
-     - family: Roboto-lite
+     - family: Roboto-regular
        fonts:
          - asset: assets/fonts/roboto/static/Roboto-Light.ttf
            style: normal

@@ -28,7 +28,7 @@ class _SetupScreenState extends State<SetupScreen> {
           ),
         ),
         centerTitle: true,
-        title: Text("Setup 2FA",style: TextStyle(color: Colors.black, fontFamily: "Roboto-normal", fontSize: 18.sp,
+        title: Text("Setup 2FA",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 18.sp,
         ),),
       ),
       body: Padding(
@@ -41,13 +41,10 @@ class _SetupScreenState extends State<SetupScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                Text("Scan QR",style: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 18.sp,fontWeight:
-                FontWeight.w600),),
+                Text("Scan QR",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 18.sp),),
                 Image.asset(AstImg.qr),
-                Text("Your Secret Code",style: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 18.sp,fontWeight:
-                FontWeight.w600),),
-                Text("0xDF563e3D98F2A0F3d6a5cbd048b0D40f88079756",textAlign: TextAlign.center, style: TextStyle(color: Colors.black, fontFamily: "Roboto-lite", fontSize: 18.sp,fontWeight:
-                FontWeight.w400),),
+                Text("Your Secret Code",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 18.sp),),
+                Text("0xDF563e3D98F2A0F3d6a5cbd048b0D40f88079756",textAlign: TextAlign.center, style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 18.sp,),),
               ],),
             ),
             Spacer(),
@@ -62,7 +59,7 @@ class _SetupScreenState extends State<SetupScreen> {
               child: Text(
                 "Next Step",
                 style: TextStyle(
-                  fontFamily: "Roboto-normal",
+                  fontFamily: "Roboto-regular",
                   fontSize: 16.sp,
                   color: Colors.white,
                 ),
