@@ -51,14 +51,32 @@ class _LendingScreenState extends State<LendingScreen>
               width: 180.w,
               child: TabBar(
                 controller: _tabController,
-                labelStyle:TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp),
-                unselectedLabelStyle: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 14.sp),
-                indicatorColor: Color(0xff3F5FF2), // Blue underline
+                labelStyle: TextStyle(
+                  color: Colors.black,
+                  fontFamily: "Roboto-medium",
+                  fontSize: 14.sp,
+                ),
+                unselectedLabelStyle: TextStyle(
+                  color: Colors.black,
+                  fontFamily: "Roboto-regular",
+                  fontSize: 14.sp,
+                ),
+                automaticIndicatorColorAdjustment: true,
+                tabAlignment: TabAlignment.center,
+                indicatorSize: TabBarIndicatorSize.label,
+                indicator: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Color(0xff3F5FF2), // Blue underline
+                      width: 2, // Thickness of underline
+                    ),
+                  ),
+                ),
+                indicatorAnimation: TabIndicatorAnimation.elastic,
                 labelColor: Colors.black, // Selected text color
                 unselectedLabelColor: Colors.black, // Unselected text color
-                indicatorWeight: 3, // Thickness of underline
                 tabs: const [
-                  Tab(text: "Lending",),
+                  Tab(text: "Lending"),
                   Tab(text: "History"),
                 ],
               ),

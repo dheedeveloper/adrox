@@ -32,13 +32,17 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(width: 25.w,),
               Image.asset(AstImg.notification),
               SizedBox(width: 25.w,),
-              Image.asset(AstImg.scanner),
+              InkWell(
+                  onTap: () {
+
+                  },
+                  child: Image.asset(AstImg.scanner)),
             ],
           ),
             SizedBox(height: 20.w,),
             Container(
               height: 70.h,width: double.infinity.w,decoration: BoxDecoration(borderRadius: BorderRadius.circular(
-              15.r,),color: Color(0xffF4F4F6)),
+              15.r,),color: const Color(0xffF4F4F6)),
             child: Row(children: [
               Image.asset(AstImg.announcement,height: 80.h,width: 80.h,),
               SizedBox(width:10.w),
@@ -47,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 10.h,),
             Container(
               height: 130.h,width: double.infinity.w,decoration: BoxDecoration(borderRadius: BorderRadius.circular(
-              20.r,),image: DecorationImage(image: AssetImage("assets/images/dummy.png"),fit: BoxFit.fitHeight)),
+              20.r,),image: const DecorationImage(image: AssetImage("assets/images/dummy.png"),fit: BoxFit.fitHeight)),
             ),
               SizedBox(height: 10.h,),
             Text("Details",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 16.sp,)),
@@ -55,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 230.h,
                 child: GridView.builder(
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   padding: EdgeInsets.all(10.w),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4, // 2 columns
@@ -98,8 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       Text("USDT",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 16.sp,)),
                       Text("2938",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
                     ],),
-                    Spacer(),
-                    Container(height: 25.h,width: 60.w,decoration: BoxDecoration(color: Color(0xff3ECD8B),borderRadius: BorderRadius.circular(8.r)),
+                    const Spacer(),
+                    Container(height: 25.h,width: 60.w,decoration: BoxDecoration(color: const Color(0xff3ECD8B),borderRadius: BorderRadius.circular(8.r)),
                       child: Center(child: Text("+ 0.02%",style: TextStyle(color: Colors.white, fontFamily: "Roboto-regular", fontSize: 13.sp,)),),)
                   ],)))
 

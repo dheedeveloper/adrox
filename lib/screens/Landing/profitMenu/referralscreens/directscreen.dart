@@ -30,8 +30,8 @@ class _DirectTabState extends State<DirectTab> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Total Pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
-                    Text("100000 USDT",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
+                    Text("Total Pool",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
+                    Text("100000 USDT",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-regular", fontSize: 18.sp,)),
                   ],),
                 SizedBox(width: 15.w,),
                 VerticalDivider(indent: 15.h,endIndent: 15.h,),
@@ -40,15 +40,15 @@ class _DirectTabState extends State<DirectTab> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Total Members",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
-                    Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-medium", fontSize: 18.sp,)),
+                    Text("Total Members",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
+                    Text("100 ADX",style: TextStyle(color: Color(0xff41418E), fontFamily: "Roboto-regular", fontSize: 18.sp,)),
                   ],),
               ],
             ),),
           SizedBox(height: 20.h,),
           Row(
             children: [
-              Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 15.sp,)),
+              Text("History",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 15.sp,)),
               Spacer(),
               SizedBox(height: 30.h,
                 child: DecoratedBox(
@@ -62,17 +62,17 @@ class _DirectTabState extends State<DirectTab> {
                       child: DropdownButton<String>(
                         borderRadius: BorderRadius.all(Radius.circular(15.r)),
                         value: selectedValue,
-                         style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,),
+                         style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 13.sp,),
                         items: [
                           DropdownMenuItem(
                             value: "Last Month",
                             child: Text("Last Month",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 13.sp,)),
                           ),
                           DropdownMenuItem(
                             value: "Last Year",
                             child: Text("Last Year",
-                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 13.sp,)),
+                                style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 13.sp,)),
                           ),
                         ],
                         onChanged: (newValue) {
@@ -88,7 +88,7 @@ class _DirectTabState extends State<DirectTab> {
             ],
           ),
           SizedBox(height: 15.h,),
-          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+          Text("Today",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
           Expanded(
             child: ListView.builder(
               itemCount: 6,
@@ -110,19 +110,19 @@ class _DirectTabState extends State<DirectTab> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 14.sp,)),
-                          Text("Direct Bonus",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 10.sp,)),
+                          Text("50 ADX",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 14.sp,)),
+                          Text("Direct Bonus",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 10.sp,)),
                         ],),
                       SizedBox(width: 16.w,),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("KJ4599DF",style: TextStyle(color: Color(0xff3F5FF2), fontFamily: "Roboto-medium", fontSize: 14.sp,)),
-                          Text("Abu",style: TextStyle(color: Colors.black, fontFamily: "Roboto-medium", fontSize: 10.sp,)),
+                          Text("KJ4599DF",style: TextStyle(color: Color(0xff3F5FF2), fontFamily: "Roboto-regular", fontSize: 14.sp,)),
+                          Text("Abu",style: TextStyle(color: Colors.black, fontFamily: "Roboto-regular", fontSize: 10.sp,)),
                         ],),
                       Spacer(),
-                      Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-medium", fontSize: 12.sp,)),
+                      Text("11.30Am",style: TextStyle(color: Colors.black54, fontFamily: "Roboto-regular", fontSize: 12.sp,)),
                     ],),),
               ),
             ),
