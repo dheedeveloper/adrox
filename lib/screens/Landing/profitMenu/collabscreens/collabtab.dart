@@ -193,12 +193,12 @@ class TreePainter extends CustomPainter {
 
     final double centerX = size.width / 2;
     const double startY = 8;
-    const double midY = 30; // First downward curve
-    const double curveY = 20; // Midpoint of the curve
+    const double midY = 27; // First downward curve
+    const double curveY = 22; // Midpoint of the curve
     const double endY = 70; // Bottom position where boxes are placed
 
-    final double leftX = centerX -65;
-    final double rightX = centerX + 65;
+    final double leftX = centerX -57;
+    final double rightX = centerX + 57;
 
     // Draw vertical line down from top
     path.moveTo(centerX, startY);

@@ -1,0 +1,2 @@
+C:/Mobile apps/learnings/testing/adrox/android/app/.cxx/RelWithDebInfo/3a2m6ad4/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Mobile apps/learnings/testing/adrox/android/app/.cxx/RelWithDebInfo/3a2m6ad4/armeabi-v7a/CMakeFiles/rebuild_cache.dir
